@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="formulario-contenedor">
+        <form action="#" method="post">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+            <div class="campo">
+                <label for="numero">Numero</label>
+                <input type="text" id="numero" name="numero" required>
+            </div>
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="monto">Monto</label>
+                <input type="text" id="monto" name="monto" placeholder="Ingrese un monto entre $1.000 y $1.000.000"
+                    required>
+            </div>
+            <div>
+                <label for="opciones">Seleccione una opción</label>
+                <select name="opciones" id="opciones">
+                    <option value="opcion1">1 Cuotas</option>
+                    <option value="opcion2">3 Cuotas</option>
+                    <option value="opcion3">6 Cuotas</option>
+                    <option value="opcion4">12 Cuotas</option>
+                    <option value="opcion5">18 Cuotas</option>
+                    <option value="opcion6">24 Cuotas</option>
+                    <option value="opcion7">48 Cuotas</option>
+                </select>
+            </div>
+            <div class="centro">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
