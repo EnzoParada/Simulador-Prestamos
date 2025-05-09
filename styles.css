@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100dvh;
     margin: 0;
 }
 .formulario-contenedor{
@@ -46,6 +46,9 @@ button{
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
+}
+.input-invalido {
+  border: 1px solid red;
 }
 .centro{
     display: grid;
