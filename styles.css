@@ -1,10 +1,29 @@
 body{
     background-color: antiquewhite;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     min-height: 100dvh;
     margin: 0;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.contenedor-princioal{
+display: flex;
+align-items: flex-start;
+gap: 20px;
+max-width: 95%;
+width: auto;
+}
+.resumen-contenedor{
+    position: relative;
+    left: 250px;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    max-width: 95%;
+    width: auto;
 }
 .formulario-contenedor{
     display: flex;
@@ -29,8 +48,8 @@ label{
 input[type="text"],
 input[type="number"],
 select {
-    width: calc(100% - 12px) ;
-    padding: 3px;
+    width: calc(100% - 16px) ;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -38,19 +57,50 @@ select {
 }
 
 button{
-    background-color: #ccc;
+    background-color: #007bff;
+    color: white;
     margin-top: 15px;
-    width: calc(25% - 12px) ;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border: none;
     border-radius: 4px;
-    box-sizing: border-box;
+    cursor: pointer;
     font-size: 16px;
+    width: auto;
+}
+button:hover {
+    background-color: #0056b3; 
 }
 .input-invalido {
   border: 1px solid red;
 }
 .centro{
-    display: grid;
+    display: flex;
     place-items: center;
+}
+.resumen-estilos {
+     background-color: #f0f8ff;
+    padding: 20px;
+    border: 1px solid #add8e6; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(173, 216, 230, 0.5); 
+    width: 300px; 
+    max-width: 90%; 
+    margin-top: 0; 
+}
+
+.resumen-estilos h3 {
+    color: #1e90ff; 
+    margin-top: 0; 
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee; 
+    padding-bottom: 5px; 
+}
+
+.resumen-estilos p {
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.resumen-estilos p:last-child {
+    margin-bottom: 0;
 }

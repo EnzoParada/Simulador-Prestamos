@@ -10,7 +10,7 @@
 
 <body>
     <div class="formulario-contenedor">
-        <form action="#" method="post">
+        <form id="mi-formulario" method="post">
             <div class="campo">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -49,10 +49,24 @@
                 </select>
             </div>
             <div class="centro">
-                <button type="submit">Enviar</button>
+                <button type="button" onclick="mostrarResumen()">Enviar</button>
+           </div>
             </div>
         </form>
-    </div>
+        <div class="resumen-contenedor">
+            <form id="info-resumen" method="post">
+                <div id="resumen-contenedor" class="resumen-estilos" style="display: none;">
+                    <h3>Resumen de su solicitud:</h3>
+                    <p id="resumen-nombre"></p>
+                    <p id="resumen-dni"></p>
+                    <p id="resumen-numero"></p>
+                    <p id="resumen-edad"></p>
+                    <p id="resumen-email"></p>
+                    <p id="resumen-monto"></p>
+                    <p id="resumen-opciones"></p>
+                </div>
+            </form>
+        </div>
 
     <script src="script.js"></script>
 </body>
